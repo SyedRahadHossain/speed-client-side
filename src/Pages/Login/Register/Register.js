@@ -6,6 +6,8 @@ import { useHistory } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import Header from '../../Shared/Header/Header';
+import login from '../../../images/login.jpg';
+
 
 import { styled } from '@mui/material/styles';
 import {  grey } from '@mui/material/colors';
@@ -43,9 +45,9 @@ const Register = () => {
             <Header></Header>
             <Container>
                 <Grid container spacing={2}>
-                    {/* <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6}>
                     <img style={{ width: '100%' }} src={login} alt="" />
-                </Grid> */}
+                </Grid>
                     <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                         <Typography variant="body1" gutterBottom>Register</Typography>
                         {!isLoading && <form onSubmit={handleLoginSubmit}>

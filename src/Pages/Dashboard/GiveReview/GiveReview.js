@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../hooks/useAuth';
+import review from '../../../images/review.jpg';
+
 
 const GiveReview = () => {
     const { user } = useAuth();
@@ -26,7 +28,7 @@ const GiveReview = () => {
                 <h2 className="m-5 text-danger">Please Give Us Review</h2>
                 <div className="row mt-3 mb-5 shadow  rounded">
                     <div className="col-md-6">
-                        {/* <img className="img-fluid" src={addPackage} alt="" /> */}
+                        <img className="img-fluid" src={review} alt="" />
                     </div>
                     <div className="col-md-6">
                         <h3 className="m-4 text-danger">Please Fill This Form</h3>

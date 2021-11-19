@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import car from '../../../images/addProduct.jpg';
+
 
 const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -22,7 +24,7 @@ const AddProduct = () => {
                 <h2 className="m-5 text-danger">Please Add Product</h2>
                 <div className="row mt-3 mb-5 shadow  rounded">
                     <div className="col-md-6">
-                        {/* <img className="img-fluid" src={addPackage} alt="" /> */}
+                        <img className="img-fluid" src={car} alt="" />
                     </div>
                     <div className="col-md-6">
                         <h3 className="m-4 text-danger">Please Fill This Form</h3>
