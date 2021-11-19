@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${user?.email}`)
+        fetch(`https://radiant-wave-84161.herokuapp.com/myOrders/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 setOrders(data);
@@ -27,7 +27,7 @@ const MyOrders = () => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
 
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://radiant-wave-84161.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

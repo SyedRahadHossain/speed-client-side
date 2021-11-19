@@ -8,7 +8,7 @@ const Reviews = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/reviews")
+        fetch("https://radiant-wave-84161.herokuapp.com/reviews")
             .then((res) => res.json())
             .then((data) => {
                 setReviews(data);
@@ -36,7 +36,7 @@ const Reviews = () => {
                             <Card.Img
                                 style={{ width: '150px', borderRadius: '50%' }}
                                 className="border border-3 border-danger"
-                                variant="top" 
+                                variant="top"
                                 src={review.img} />
                             <Card.Body>
                                 <Card.Title className="text-danger fw-bold fs-1">"</Card.Title>

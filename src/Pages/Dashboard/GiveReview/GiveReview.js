@@ -11,7 +11,7 @@ const GiveReview = () => {
     const onSubmit = data => {
         // console.log(data);
 
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://radiant-wave-84161.herokuapp.com/reviews', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
