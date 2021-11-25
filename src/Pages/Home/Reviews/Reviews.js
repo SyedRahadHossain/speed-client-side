@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Carousel, Spinner } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
+import Rating from 'react-rating';
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
@@ -51,7 +52,11 @@ const Reviews = () => {
                                     - {review.name}
                                 </Card.Text>
                                 <Card.Text className="fw-bold ">
-                                    <span className="">Rating:</span> {review.rating}
+                                    <Rating
+                                    initialRating={review.rating} 
+                                    emptySymbol="far fa-star text-warning"
+                                    fullSymbol="fas fa-star text-warning"
+                                    readonly></Rating>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
