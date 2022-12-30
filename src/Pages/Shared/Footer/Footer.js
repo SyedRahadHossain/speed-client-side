@@ -1,10 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import bg from '../../../images/bg.jpg';
+import '../../Shared/Footer/Footer.css';
+
+
+// const footerBg = {
+//     background: `url(${bg})`,
+//     // backgroundColor: 'rgba(45, 58, 74, 0.9)',
+//     // backgroundBlendMode: 'darken, luminosity',
+//     // marginTop: 175,
+//     backgroundRepeat: 'no-repeat',
+//     backgroundPosition: 'center',
+//     backgroundSize: "contain,cover",
+//     // opacity: '0.7',
+// }
 
 const Footer = () => {
     return (
         <div>
-            <div className="bg-danger p-5">
+            <div  className="bg-danger p-5 ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">

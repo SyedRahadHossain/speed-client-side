@@ -9,7 +9,7 @@ const Reviews = () => {
 
 
     useEffect(() => {
-        fetch("https://radiant-wave-84161.herokuapp.com/reviews")
+        fetch("https://speed-fe2n.onrender.com/reviews")
             .then((res) => res.json())
             .then((data) => {
                 setReviews(data);
@@ -53,10 +53,10 @@ const Reviews = () => {
                                 </Card.Text>
                                 <Card.Text className="fw-bold ">
                                     <Rating
-                                    initialRating={review.rating} 
-                                    emptySymbol="far fa-star text-warning"
-                                    fullSymbol="fas fa-star text-warning"
-                                    readonly></Rating>
+                                        initialRating={review.rating}
+                                        emptySymbol="far fa-star text-warning"
+                                        fullSymbol="fas fa-star text-warning"
+                                        readonly></Rating>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

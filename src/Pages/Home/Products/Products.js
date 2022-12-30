@@ -12,7 +12,7 @@ const Products = () => {
 
 
     useEffect(() => {
-        fetch("https://radiant-wave-84161.herokuapp.com/products")
+        fetch("https://speed-fe2n.onrender.com/products")
             .then((res) => res.json())
             .then((data) => {
                 setProducts(data);

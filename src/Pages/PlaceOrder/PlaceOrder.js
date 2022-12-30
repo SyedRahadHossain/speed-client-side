@@ -13,7 +13,7 @@ const PlaceOrder = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch(`https://radiant-wave-84161.herokuapp.com/products/${productId}`)
+        fetch(`https://speed-fe2n.onrender.com/products/${productId}`)
             .then((res) => res.json())
             .then((data) => {
                 setProduct(data);
@@ -27,7 +27,7 @@ const PlaceOrder = () => {
     const onSubmit = data => {
         // console.log(data);
 
-        fetch('https://radiant-wave-84161.herokuapp.com/orders', {
+        fetch('https://speed-fe2n.onrender.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

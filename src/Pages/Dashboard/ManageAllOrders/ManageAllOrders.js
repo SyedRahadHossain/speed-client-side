@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
 
 
     useEffect(() => {
-        fetch('https://radiant-wave-84161.herokuapp.com/orders')
+        fetch('https://speed-fe2n.onrender.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
             .catch(err => {
@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
 
-            const url = `https://radiant-wave-84161.herokuapp.com/orders/${id}`;
+            const url = `https://speed-fe2n.onrender.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
